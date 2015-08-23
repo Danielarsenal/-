@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title></title>
+    <link href="./public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/less/category.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="header navbar navbar-default">
+            <!-- <div class="container-fluid"> -->
+            <!-- 头部 -->
+            <div class="navbar-header pull-left index_logo">
+                <a class="navbar-brand" href="./index.html">
+                        <img src="./public/images/header_logo.png" alt="">
+                    </a>
+            </div>
+
+
+            <div class="pull-right app_download">
+                <a class="navbar-brand index_logo" href="javascript:;">
+                        <img src="./public/images/header_app.png" alt="">
+                    </a>
+            </div>
+            <!-- </div> -->
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <!-- 搜索框 -->
+    <div class="container nav_search">
+        <div class="input-group">
+            <input type="text" class="form-control search" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">搜索</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <form action="" id="priceSearch_classify" class="priceSearch_classify">
+            <div class="brief" id="brief">
+
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <ul class="clearfix">
+            <li>
+                <a href='javascript:;'>登录</a>
+            </li>
+            <li>
+                <a href='javascript:;'>注册</a>
+            </li>
+            <li class="back_to_top">
+                <a href='#page_header'>
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部
+                    </a>
+            </li>
+        </ul>
+        <p class="footer_download">
+            <a href='javascript:;' class='footer_appdownload'>手机APP下载</a>
+            <a href='javascript:;'>慢慢买手机版</a>
+            <span>-- 掌上比价平台</span>
+        </p>
+        <p class="footer_manmanbuy_site">m.manmanbuy.com。</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="./public/assets/jquery/jquery.js"></script>
+    <script src="./public/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="./public/assets/artTemplate/template.js"></script>
+    <script src="./public/js/apiConfig.js"></script>
+    <script src="./public/js/category.js"></script>
+    <script type="text/template" id="ps_classify">
+        {{each}}
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" name="{{$index}}" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">{{$value}}<span class="glyphicon glyphicon-chevron-down"></span></button>
+            <ul class="dropdown-menu" id="dropdown_list{{$index}}">
+
+            </ul>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/template" id="dropdown_list_name">
+        {{each}}
+        <li><a href='./category_list.html?categoryid={{$index}}&pageid=1';>{{$value}}</a></li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

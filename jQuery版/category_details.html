@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title></title>
+    <link href="./public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/less/category_details.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="header navbar navbar-default">
+            <!-- <div class="container-fluid"> -->
+            <!-- 头部 -->
+            <div class="navbar-header pull-left index_logo">
+                <a class="navbar-brand" href="./index.html">
+                        <img src="./public/images/header_logo.png" alt="">
+                    </a>
+            </div>
+
+
+            <div class="pull-right app_download">
+                <a class="navbar-brand index_logo" href="javascript:;">
+                        <img src="./public/images/header_app.png" alt="">
+                    </a>
+            </div>
+            <!-- </div> -->
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <!-- 搜索框 -->
+    <div class="container nav_search">
+        <div class="input-group">
+            <input type="text" class="form-control search" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">搜索</span>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="top" id="top">
+
+        </div>
+        <div class="bottom" id="bottom">
+
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <ul class="clearfix">
+            <li>
+                <a href='javascript:;'>登录</a>
+            </li>
+            <li>
+                <a href='javascript:;'>注册</a>
+            </li>
+            <li class="back_to_top">
+                <a href='#'>
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部
+                    </a>
+            </li>
+        </ul>
+        <p class="footer_download">
+            <a href='javascript:;' class='footer_appdownload'>手机APP下载</a>
+            <a href='javascript:;'>慢慢买手机版</a>
+            <span>-- 掌上比价平台</span>
+        </p>
+        <p class="footer_manmanbuy_site">m.manmanbuy.com。</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="./public/assets/jquery/jquery.js"></script>
+    <script src="./public/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="./public/js/apiConfig.js"></script>
+    <script src="./public/js/utils.js"></script>
+    <script src="./public/js/category_details.js"></script>
+    <script src="./public/assets/artTemplate/template.js"></script>
+    <script type="text/html" id="product_details_body">
+        <nav>
+            <a href="./index.html">首页</a> >
+            <a href="./category.html">全部分类</a> >
+            <a href="./category_list.html?categoryid={{categoryId}}">本类别</a> >
+            <a class="btn btn-default" href="javascript:;" role="button">筛选</a>
+        </nav>
+        <div class="product-list">
+            <div class="title">
+                {{productName}}
+            </div>
+            <div class="pic">
+                {{#productImg}}
+                <img src="./public/uploads/sc.jpg" alt="">
+            </div>
+            <div class="row">
+                <div class="col-xs-4">比价购买</div>
+                <div class="col-xs-4">价格参数</div>
+                <div class="col-xs-4">评论(1234)</div>
+            </div>
+            <div class="shopMall_info">
+                {{#bjShop}}
+                <p>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时或数日的延迟</p>
+            </div>
+        </div>
+    </script>
+    <script type="text/html" id="product_commend_body">
+
+        <div class="cus_commend">
+            <div class="row">网友评价</div>
+            {{each}}
+            <ul>
+                <li>
+                    <span>{{$value.comName}}</span><span>{{$value.comTime}}</span>
+                </li>
+                <li>
+                    <span>{{$value.comFrom}}</span>
+                </li>
+                <li>
+                    <p>
+                        {{$value.comContent}}。
+                    </p>
+                </li>
+            </ul>
+            {{/each}}
+        </div>
+        <div class="more">
+            <button type="button" class="btn btn-default">查看更多评价</button>
+        </div>
+    </script>
+</body>
+
+</html>
