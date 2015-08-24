@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>凑单页</title>
+    <!--<link rel="stylesheet" href="public/less/base.css">-->
+    <link rel="stylesheet" href="public/less/gsproduct.css">
+</head>
+<body>
+<div class="header-bar">
+    <div class="inner">
+        <div class="left">
+            <a href="./index.html" class="iconfont">&#xe606;</a>
+        </div>
+        <div class="center">凑单品</div>
+        <div class="right">
+            <a href="#" class="iconfont">&#xe646;</a>
+            <br/>
+            <span>APP下载</span>
+        </div>
+    </div>
+</div>
+<div class="coudan-box">
+    <div class="list">
+        <div class="hd">
+            <div class="filter">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            京东
+                            <i class="iconfont">&#xe615;</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            华北
+                            <i class="iconfont">&#xe615;</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            全部价格
+                            <i class="iconfont">&#xe615;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <i class="iconfont">&#xe65a;</i>
+            </div>
+            <!--各部分对应的下拉-->
+            <div class="dd-shop drop-down on">
+                <ul>
+                    <!--<li>-->
+                    <!--<a href="javascript:;">一号店</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="javascript:;">天猫超市</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="dd-area drop-down">
+                <ul>
+                    <li class="active">
+                        <a href="javascript:;">华北(北京、山西等)</a>
+                        <i class="iconfont">&#xe61d;</i>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href="javascript:;">华东(山东、浙江等)</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="javascript:;">华南(广东、广西等)</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="javascript:;">华中(湖北、河南等)</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="javascript:;">西南(四川、云南等)</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="javascript:;">东北(辽宁、吉林等)</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="javascript:;">西北(宁夏、新疆等)</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="dd-price drop-down">
+                <ul>
+                    <li class="active">
+                        <a href="javascript">
+                            全部价格
+                        </a>
+                        <i class="iconfont">&#xe61d;</i>
+                    </li>
+                    <li><a href="javascript">1-3元</a></li>
+                    <li><a href="javascript">3-5元</a></li>
+                    <li><a href="javascript">5-10元</a></li>
+                    <li><a href="javascript">10-15元</a></li>
+                    <li><a href="javascript">15元以上</a></li>
+                </ul>
+            </div>
+            <div class="dd-search drop-down">
+                <div class="formsearch clearfix">
+                    <div class="left">
+                        <i></i>
+                        <input type="search" placeholder="搜索您想要的凑单品">
+                    </div>
+                    <div class="right">
+                        <input type="button" value="搜索">
+                    </div>
+                </div>
+                <div class="sort clearfix">
+                    <div class="txt">排序</div>
+                    <div class="type">
+                        <dl>
+                            <dd><a href="javascript:">销量</a></dd>
+                            <dd class="active"><a href="javascript:">价格↑</a></dd>
+                            <dd><a href="javascript:">价格↓</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="text">分类</div>
+                    <dl class="clearfix">
+                        <dd class="active"><a href="javascript">全部</a></dd>
+                        <dd><a href="javascript">家居</a></dd>
+                        <dd><a href="javascript">数码</a></dd>
+                        <dd><a href="javascript">办公</a></dd>
+                        <dd><a href="javascript">个护</a></dd>
+                        <dd><a href="javascript">食品</a></dd>
+                        <dd><a href="javascript">母婴</a></dd>
+                        <dd><a href="javascript">服饰</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="bd">
+            <ul class="contanier clearfix product">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 店铺下拉列表模板 -->
+<script type="text/template" id="cd_shop_tpl">
+    {{each result as v i}}
+    <li class="shopList">
+        <a href="javascript:;" data-id="{{v.shopId}}">{{v.shopName}}</a>
+        <i class="iconfont">&#xe61d;</i>
+    </li>
+    {{/each}}
+</script>
+<!-- 地区下拉列表模板 -->
+<script type="text/template" id="cd_area_tpl">
+    {{each result as v i}}
+    <li class="">
+        <a href="javascript:;" data-id="{{v.areaId}}">{{v.areaName}}</a>
+        <i class="iconfont">&#xe61d;</i>
+    </li>
+    {{/each}}
+</script>
+
+<!-- 凑单品商品列表 -->
+<script type="text/template" id="cd_product_tpl">
+    {{each result as v i}}
+    <li>
+        <div class="item">
+            <a href="gsproduct.html?area={{v.areaId}}&site={{v.shopId}}" class="item">
+                <div class="pic">
+                    <img src="{{v.productImg}}" alt="">
+                </div>
+                <div class="title">{{v.productName}}</div>
+                <div class="other clearfix">
+                    <div class="price">
+                        <em>{{v.productPrice}}</em>
+                    </div>
+                    <div class="btn">
+                        去凑单
+                    </div>
+                </div>
+            </a>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="public/assets/xuexin/js/zepto.min.js"></script>
+<script src="public/assets/xuexin/js/fastclick.js"></script>
+<script src="public/js/gsproduct.js"></script>
+<script src="public/assets/artTemplate/template.js"></script>
+<script src="public/assets/xuexin/js/util.js"></script>
+
+</body>
+</html>
