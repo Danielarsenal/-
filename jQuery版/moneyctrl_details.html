@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>省钱控商品详情</title>
+    <link rel="stylesheet" type="text/css" href="./public/font/iconfont.css">
+    <!--<link rel="stylesheet" href="../public/less/index.css">-->
+
+    <link href="./public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/less/moneyctrl_details.css" />
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="./moneyctrl.html">
+                        <i class="iconfont icon-jiantou2"></i>
+                    </a>
+                </div>
+                <div class="navbar-right app-donwload pull-right">
+                    <img src="./public/images/header_app.png" alt="">
+                </div>
+                <h2>国内折扣</h2>
+
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!--主体-->
+    <main>
+        <!--商品详情-->
+        <div class="container">
+        </div>
+        <!--评价区-->
+        <div class="comment">
+            <!--前往购买-->
+            <div class="city">
+            </div>
+            <div class="cm-buy">
+                <a href='https://www.jd.com'>
+                    <i class="iconfont icon-gouwuche"></i>
+                    前往购买
+                </a>
+            </div>
+            <div class="cm-new">
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <ul class="clearfix">
+            <li>
+                <a href='./login.html'>登录</a>
+            </li>
+            <li>
+                <a href='javascript:;'>注册</a>
+            </li>
+            <li class="back_to_top">
+                <a class="getback" href='#page_header'>
+                        <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部
+                </a>
+            </li>
+        </ul>
+        <p class="footer_download">
+            <a href='javascript:;' class='footer_appdownload'>手机APP下载</a>
+            <a href='javascript:;'>慢慢买手机版</a>
+            <span>-- 掌上比价平台</span>
+        </p>
+        <p class="footer_manmanbuy_site">m.manmanbuy.com。</p>
+    </div>
+    </div>
+
+
+
+    <!--底部固定栏-->
+    <div class="fixation">
+        <!--写评论-->
+        <div class="wt-comment">
+            <a href='javascript:;'>
+                <i class="iconfont icon-bianjitubiao-copy"></i>
+                <p>评论</p>
+            </a>
+
+        </div>
+        <div class="go-buy">
+            <a href='javascript:;'>
+                <i class="iconfont icon-gouwuche"></i>
+                前往购买
+            </a>
+        </div>
+    </div>
+</body>
+
+
+<!--商品详情渲染-->
+<script type="text/template" id="sm_details_tpl">
+    <!--标题-->
+    {{each result as v i}}
+    <div class="ct-content">
+        <h2>{{v.productName}}</h2>
+        <p>{{v.productPinkage}}</p>
+        <div class="other">
+            <span>{{v.productFrom}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+            <span>
+                <a href='javascript:;'>{{v.productComCount}}</a>
+            </span>
+        </div>
+    </div>
+
+    <!--内容-->
+    <div class="content-text clearfix">
+
+        <div>
+            <p>
+                <span>{{#v.productImgSm}}</span> {{v.productInfo}}
+
+            </p>
+            <p>
+                {{v.productInfo1}}
+            </p>
+            <p>
+                {{#v.productImgLg}}
+            </p>
+        </div>
+
+    </div>
+    {{/each}}
+
+</script>
+
+
+<!--评论区渲染-->
+<script type="text/template" id="mc_cm_tpl">
+    {{each result as v i}}
+    {{#v.productComment}} 
+    {{/each}}
+</script>
+
+<!--有货城市 渲染-->
+<script type="text/template" id="mc_city_tpl">
+    {{each result as v i}}
+    {{#v.productCity}}
+    {{/each}}
+</script>
+
+
+
+<script src="./public/assets/jquery/jquery.js"></script>
+<script src="./public/assets/bootstrap/js/bootstrap.js"></script>
+<!--<script src="./public/js/apiConfig.js"></script>-->
+<script src="./public/js/moneyctrl_details.js"></script>
+<script src="./public/assets/artTemplate/template.js"></script>
+
+</html>
+
+
+
+<!--
+<div class="cu-content-pl ui-border-t">↵ 
+         <div class="tit">发表评论</div>↵    
+           <div class="reply">↵       
+                <div class="form">↵       
+                     <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3">
+
+                     </textarea>-->

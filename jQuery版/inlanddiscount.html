@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="public/less/public.css">
+    <link rel="stylesheet" href="public/assets/bootstrap/css/content/Content/bootstrap.css">
+    <link rel="stylesheet" href="public/less/inlanddiscount.css">
+</head>
+<body>
+    <!--导航条-->
+    <div class="head">
+        <div class="back">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        </div>
+        <h1>国内折扣</h1>
+        <div class="app_download">
+            <a class="navbar-brand index_logo" href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--商品列表-->
+    <div class="cd_list">
+        <ul id="cs_list_tp">
+            <!--<li class="border-img">-->
+                <!--<a href="#" title="黄国粮业 水磨糯米粉 1kg*2包 19.9元包邮">-->
+                    <!--<div class="img">-->
+                        <!--<img src="" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="title">味出道 手撕面包 1000g/箱</div>-->
+                    <!--<div class="subtit">18.8元包邮(需用劵)</div>-->
+                    <!--<div class="info">-->
+                        <!--<div class="mail">京东商城 | 2017/7/18 16:28</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <ul class="clearfix">
+            <li>
+                <a href='./login.html'>登录</a>
+            </li>
+            <li>
+                <a href='javascript:;'>注册</a>
+            </li>
+            <li class="back_to_top">
+                <a href='#page_header'>
+                    <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部
+                </a>
+            </li>
+        </ul>
+        <p class="footer_download">
+            <a href='javascript:;' class='footer_appdownload'>手机APP下载</a>
+            <a href='javascript:;'>慢慢买手机版</a>
+            <span>-- 掌上比价平台</span>
+        </p>
+        <p class="footer_manmanbuy_site">m.manmanbuy.com。</p>
+    </div>
+    </div>
+
+    <script type="text/template" id="cn_commodity_tp">
+        {{each result as v i}}
+        <li class="border-img">
+            <a href="inlanddiscount_infor.html?productId={{v.productId}}" title="">
+                <div class="img">
+                    {{#v.productImg}}
+                </div>
+                <div class="title">{{v.productName}}</div>
+                <div class="subtit">{{v.productPrice}}</div>
+                <div class="info">
+                    <div class="mail">{{v.productFrom}} {{v.productTime}}</div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="public/assets/jquery/jquery.js"></script>
+    <script src="public/assets/bootstrap/Scripts/bootstrap.js"></script>
+    <script src="public/assets/artTemplate/template.js"></script>
+    <script src="public/js/inlanddiscount.js"></script>
+    <!--<script src="public/js/utils.js"></script>-->
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>商品详情页功能</title>
+    <link rel="stylesheet" href="public/less/public.css">
+    <link rel="stylesheet" href="public/assets/bootstrap/css/content/Content/bootstrap.css">
+    <link rel="stylesheet" href="public/less/inlanddiscount.css">
+    <link rel="stylesheet" href="public/less/inlanddiscount_info.css">
+</head>
+<body>
+<!--导航条-->
+<div class="head">
+    <div class="back">
+        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+    </div>
+    <h1>国内折扣</h1>
+    <div class="app_download">
+        <a class="navbar-brand index_logo" href="#">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!--商品详情-->
+<div id="cs_list">
+
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <ul class="clearfix">
+        <li>
+            <a href='./login.html'>登录</a>
+        </li>
+        <li>
+            <a href='javascript:;'>注册</a>
+        </li>
+        <li class="back_to_top">
+            <a href='#page_header'>
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部
+            </a>
+        </li>
+    </ul>
+    <p class="footer_download">
+        <a href='javascript:;' class='footer_appdownload'>手机APP下载</a>
+        <a href='javascript:;'>慢慢买手机版</a>
+        <span>-- 掌上比价平台</span>
+    </p>
+    <p class="footer_manmanbuy_site">m.manmanbuy.com。</p>
+</div>
+
+<!--商品详情模板-->
+<script type="text/template" id="cs_list_tp">
+    {{each result as v i}}
+    <form action="" name="" id="aspentForm">
+        <div class="container">
+            <div class="cu_content">
+                <h3 class="title">{{v.productName}}</h3>
+                <h4>{{v.productPinkage}}</h4>
+                <div class="info">
+                    <span class="mall">{{v.productFrom}}</span>
+                    <span class="addtime">{{v.productTime}}</span>
+                    <span class="author">{{v.productTips}}</span>
+                </div>
+                <div class="content clearfix">
+                    <div class="picwrap">
+                        {{#v.productImg}}
+                    </div>
+                    <div class="conn">
+                        {{v.productInfo}}
+                        <p><a href="" target="_blank">{{v.productInfo1}}</a></p>
+                        <p><a href="" target="_blank">{{v.productInfo2}}</a></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="golink">
+                    <a href="#" target="_blank">前往购买</a>
+                </div>
+            </div>
+
+            <!--发表评论-->
+            <div class="cu_content_pl border-t">
+                <div class="tit">发表评论</div>
+                <div class="reply">
+                    <div class="form">
+                        <textarea name="" id="cm_content" cols="30" rows="3"></textarea>
+                        <input type="hidden" name="" id="pop" value="手机端网友1234***98">
+                        <input type="hidden" name="" id="popp" value="COACH 蔻驰 F36624 女手提包" >
+                        <div class="ctrl">
+                            <input type="submit" name="" value="发表评论" id="btnSub" class="tjdp">
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="tit" id="newcomment">最新评论</div>-->
+                <!--<div class="list"><ul></ul> </div>-->
+                <!--{{#productComment}}-->
+                <div class="titt" id="newcomment">最新评论</div>
+                <div class="list">
+                    <ul>
+                        <li class="border_b">
+                            <div class="userimg">
+                                <img src="images/default.png" alt="">
+                            </div>
+                            <div class="con">
+                                <div class="name clearfix">
+                                    <div class="username">手机端网友***</div>
+                                    <div class="time">2017/7/19 8:34:20</div>
+                                </div>
+                                <div class="content">实惠，大爱，性价比高</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav" id="ct_Menu">
+                <a href="http://m.manmanbuy.com">首页</a>&nbsp;>&nbsp;
+                <a href="cuxiao.aspx">超值推荐</a>&nbsp;>&nbsp;{{v.productName}}
+            </div>
+        </div>
+    </form>
+    {{/each}}
+</script>
+
+
+<script src="public/assets/jquery/jquery.js"></script>
+<script src="public/assets/bootstrap/Scripts/bootstrap.js"></script>
+<script src="public/assets/artTemplate/template.js"></script>
+<script src="public/js/inlanddiscount_info.js"></script>
+
+</body>
+</html>
