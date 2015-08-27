@@ -1,0 +1,146 @@
+@import './xupeiwen.less';
+
+.layout {
+    // 头部
+    .header {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        background-color: #ff841d;
+        .index_logo {
+            a {
+                img {
+                    width: 187px;
+                }
+            }
+        }
+        .app_download {
+            a {
+                width: 60px;
+                height: 60px;
+                margin-top: -5px;
+                img {
+                    width: 34px;
+                }
+            }
+        }
+    } 
+
+    // 主体
+    .main {
+        //搜索框
+        .nav_search {
+            border-bottom: 1px solid #e6e6e6;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            >div {
+                width: 100%;
+                .search {
+                    background-color: #f1f1f1;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    width: 95%;
+                }
+                span {
+                    width: 63px;
+                    height: 34px;
+                    color: white;
+                    padding-top: 8px;
+                    font-size: 17px;
+                    border-radius: 20px;
+                    background-color: #ff841d;
+                    position: absolute;
+                    z-index: 999;
+                    right: 0;
+                }
+            }
+        }
+        // 面包屑导航
+        .nav_bread {
+            font-size: 16px;
+            margin-bottom: 0px;
+            box-shadow: 0 -2px 2px #ededed,0 2px 2px #f2f2f2;
+            background: linear-gradient(to bottom,#fff,#ebebeb);
+            li {
+                a {
+                    display: inline-block;
+                    color: #5a5a5a;
+                } 
+            }
+            .nav_brand {
+                &::before {
+                    color: #5a5a5a;
+                    content: '>'
+                }
+            }  
+        }
+        // 热门品牌排行
+        @hot_rank_bgc:#f2f2f2;
+        .hot_brand_rank {
+            padding: 10px;
+            background-color: @hot_rank_bgc;
+            .hot_rank_title {
+                background-color: #eeeeee;
+                font-size: 18px;
+                color: #874604;
+                .panel-body {
+                    padding: 10px;
+                }
+            }
+            .hot_rank_content { 
+                ul {
+                    li {
+                        margin-bottom: 0;
+                        background-color:@hot_rank_bgc;
+                        border: none;
+                        border-bottom:1px solid #ccc;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // 页脚
+    .footer {
+        padding-top: 10px;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #5a5a5a;
+        ul {
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+            li {
+                padding: 10px 10px;
+                width: 30%;
+                float: left;
+                border-right: 1px solid #c4c4c4;
+                a {
+                    color: #5a5a5a;
+                }
+            }
+            .back_to_top {
+                width: 40%;
+                height: 40px;
+                img {
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    width: 15px;
+                }
+            }
+        }
+        .footer_download {
+            text-align: center;
+            margin-bottom: 0;
+            a {
+                color: #5a5a5a;
+                display: inline-block;
+            }
+            .footer_appdownload {
+                color: red;
+            }
+        }
+    }
+}

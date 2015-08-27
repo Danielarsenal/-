@@ -1,0 +1,236 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  background-color: #f4f6f8;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  display: inline-block;
+  color: #000;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+header .navbar-default {
+  margin: 0;
+  background-color: #ff841d;
+}
+header .navbar-default .pull-left i {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+header .navbar-default h2 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  margin-top: 15px;
+}
+header .navbar-default .app-donwload img {
+  width: 34px;
+  margin-top: 8px;
+}
+main {
+  background-color: #fff;
+}
+main .container .ct-content h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5a5a5a;
+}
+main .container .ct-content p {
+  color: red;
+  font-weight: 700;
+}
+main .container .ct-content .other {
+  font-size: 10px;
+  color: #9b9b9b;
+  margin: 10px 0;
+}
+main .container .content-text div p {
+  font-size: 16px;
+}
+main .container .content-text div p span {
+  width: 110px;
+  height: 110px;
+  float: right;
+}
+main .container .content-text div p span img {
+  width: 110px;
+}
+main .comment {
+  padding: 0 8px;
+}
+main .comment .city #disstorck {
+  list-style: none;
+  margin: 0 auto;
+  width: 120px;
+  border: #eee 1px solid;
+  box-shadow: 1px 1px 2px #ccc;
+  padding: 0 0 ;
+}
+main .comment .city #disstorck li {
+  position: relative;
+  margin: 0 10px;
+  border-bottom: #ccc 1px dotted;
+  width: 100px;
+}
+main .comment .city #disstorck li a span {
+  font-size: 10px;
+  font-family: padding: 5px;
+}
+main .comment .city #disstorck li a span strong {
+  color: #ff841d;
+  position: absolute;
+  right: 0;
+}
+main .comment .cm-buy {
+  padding: 20px 10px;
+}
+main .comment .cm-buy a {
+  width: 100%;
+  height: 40px;
+  background-color: #ff9000;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+main .comment .cm-new .form {
+  position: relative;
+}
+main .comment .cm-new .form textarea {
+  border: #eee solid 2px;
+  width: 100%;
+  height: 150px;
+  outline: none;
+}
+main .comment .cm-new .form .ctrl {
+  height: 40px;
+  width: 100%;
+  background-color: #fbfbfb;
+  position: absolute;
+  bottom: 4px;
+}
+main .comment .cm-new .form .ctrl input {
+  width: 100px;
+  height: 40px;
+  background-color: #ff841d;
+  border: none;
+  color: white;
+  padding: 2px 2px;
+  float: right;
+}
+main .comment .cm-new .list ul {
+  list-style: none;
+  padding-left: 10px;
+}
+main .comment .cm-new .list ul .ui-border-b {
+  margin: 10px 0;
+}
+main .comment .cm-new .list ul .ui-border-b .userimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+}
+main .comment .cm-new .list ul .ui-border-b .con {
+  padding-left: 60px;
+  width: 100%;
+}
+main .comment .cm-new .list ul .ui-border-b .con .name {
+  height: 20px;
+}
+main .comment .cm-new .list ul .ui-border-b .con .name .username {
+  color: #77a9cb;
+  font-size: 10px;
+  float: left;
+}
+main .comment .cm-new .list ul .ui-border-b .con .name .time {
+  color: #5a5a5a;
+  font-size: 10px;
+  float: right;
+}
+main .comment .cm-new .list ul .ui-border-b .con .content img {
+  width: 22px;
+  height: 22px;
+}
+.footer {
+  text-align: center;
+  color: #5a5a5a;
+  background-color: #efefef;
+  margin-bottom: 50px;
+}
+.footer ul {
+  list-style: none;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.footer ul li {
+  padding: 10px 10px;
+  width: 30%;
+  float: left;
+  border-right: 1px solid #c4c4c4;
+}
+.footer ul li img {
+  display: inline-block;
+}
+.footer ul li a {
+  color: #5a5a5a;
+}
+.footer ul .back_to_top {
+  width: 40%;
+  height: 40px;
+}
+.footer ul .back_to_top img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 15px;
+}
+.footer .footer_download {
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer .footer_download a {
+  color: #5a5a5a;
+  display: inline-block;
+}
+.footer .footer_download .footer_appdownload {
+  color: red;
+}
+.fixation {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+.fixation .wt-comment {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+.fixation .wt-comment a {
+  color: #727272;
+}
+.fixation .go-buy {
+  width: 100%;
+  height: 100%;
+  background-color: #ff841d;
+  padding-left: 100px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+}
+.fixation .go-buy a {
+  color: white;
+}

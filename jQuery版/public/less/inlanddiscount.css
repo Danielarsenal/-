@@ -1,0 +1,155 @@
+/*导航条样式开始*/
+.head{
+    height:44px;
+    width:100%;
+    background-color: #ff841d;
+    color:#fff;
+    display: -webkit-box !important;
+    position: relative;
+}
+.head .back{
+    width: 50px;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    position: relative;
+    display: -webkit-box !important;
+}
+.head span{
+    line-height: 2.5;
+    font-size:18px;
+    padding-left:10px;
+}
+.head h1{
+    line-height:5px;
+    padding-left: 26%;
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+    display: -webkit-box !important;
+    position: relative;
+    font-family:'微软雅黑';
+}
+.app_download a {
+    width: 60px;
+    height: 60px;
+    margin-top: -8px;
+    display: -webkit-box !important;
+    padding-right: 0;
+}
+.app_download a img {
+    width: 32px;
+}
+
+
+/*商品列表样式开始*/
+ .cd_list{
+     max-width: 960px;
+     background-color: #fff;
+     text-align: center;
+     font-size:14px;
+     margin:0 auto;
+     display: block;
+ }
+.cd_list ul{
+    display: table;
+    width:100%;
+    padding:0 0 10px 0;
+    box-sizing: border-box;
+    white-space: normal;
+}
+.cd_list ul li{
+    width:50%;
+    float: left;
+    display: table-cell;
+    padding: 10px 0 0 10px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    border:1px solid #eee;
+    overflow: hidden;
+}
+.cd_list ul li a{
+    display: block;
+}
+.cd_list .img img{
+    width: 140px;
+    height: 140px;
+    margin:10px auto;
+    overflow: hidden;
+}
+.cd_list .title{
+    color: #333;
+    padding:0 8px;
+    font-size:14px;
+    font-weight:bold;
+    text-align: left;
+    text-align-last: left;
+    line-height:18px;
+    height:36px;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.cd_list .subtit{
+    height:18px;
+    line-height: 18px;
+    color:#ff6c00;
+    margin-top: 4px;
+    font-size:14px;
+    padding:0 8px;
+    text-align: left;
+    text-align-last: left;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.cd_list .info{
+    padding:6px 8px;
+    font-size:14px;
+    line-height: 24px;
+}
+.cd_list .mail{
+    color:#a1a1a1;
+    font-size: 12px;
+    text-align: left;
+}
+
+/*底部样式*/
+.footer {
+    text-align: center;
+    color: #5a5a5a;
+}
+.footer ul {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+}
+.footer ul li {
+    padding: 10px 10px;
+    width: 30%;
+    float: left;
+    border-right: 1px solid #c4c4c4;
+}
+.footer ul li a {
+    color: #5a5a5a;
+}
+.footer .back_to_top {
+    width: 40%;
+    height: 40px;
+}
+.footer .back_to_top img {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 15px;
+}
+.footer_download {
+    text-align: center;
+    margin-bottom: 0;
+}
+.footer_download a {
+    color: #5a5a5a;
+    display: inline-block;
+}
+.footer_appdownload {
+    color: red;
+}

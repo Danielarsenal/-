@@ -1,0 +1,304 @@
+@import './xupeiwen.less';
+
+.layout {
+    // 头部
+    .header {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        background-color: #ff841d;
+        .index_logo {
+            a {
+                img {
+                    width: 187px;
+                }
+            }
+        }
+        .app_download {
+            a {
+                width: 60px;
+                height: 60px;
+                margin-top: -5px;
+                img {
+                    width: 34px;
+                }
+            }
+        }
+    } 
+
+    // 主体
+    .main {
+        //搜索框
+        .nav_search {
+            border-bottom: 1px solid #e6e6e6;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            >div {
+                width: 100%;
+                .search {
+                    background-color: #f1f1f1;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    width: 95%;
+                }
+                span {
+                    width: 63px;
+                    height: 34px;
+                    color: white;
+                    padding-top: 8px;
+                    font-size: 17px;
+                    border-radius: 20px;
+                    background-color: #ff841d;
+                    position: absolute;
+                    z-index: 999;
+                    right: 0;
+                }
+            }
+        }
+        // 面包屑导航
+        .nav_bread {
+            font-size: 16px;
+            margin-bottom: 0px;
+            box-shadow: 0 -2px 2px #ededed,0 2px 2px #f2f2f2;
+            background: linear-gradient(to bottom,#fff,#ebebeb);
+            li {
+                a {
+                    display: inline-block;
+                    color: #5a5a5a;
+                } 
+            }
+            .nav_brand {
+                &::before {
+                    color: #5a5a5a;
+                    content: '>'
+                }
+            }  
+        }
+        //牌子排行
+        .brand_rank {
+            .brand_rank_title {
+                box-shadow: 0 -2px 2px #ccc,0 1px 1px #ccc;
+                .panel {
+                    background-color: #f3f3f3;
+                    color: #8f5316;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    .panel-body {
+                        padding: 10px;
+                    }
+                }
+            }
+            .brand_rank_content {
+                .panel {
+                    margin-bottom: 0;
+                    .panel-body {
+                        padding: 0;
+                        ul {
+                            margin-bottom: 0;
+                            li {
+                                position: relative; 
+                                padding-left: 30px;
+                                background-color: #f2f2f2;
+                                .icoNum {
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    font-size: 13px;
+                                    text-align: center;
+                                    color: #fff;
+                                    background-color: #c9c9c9;
+                                    position: absolute;
+                                    left: 5px;
+                                    top: 8px;
+                                }
+                                .icoNum1 {
+                                    background-color: red;
+                                }
+                                .icoNum2 {
+                                    background-color: #ff9314;
+                                }
+                                .icoNum3 {
+                                    background-color: #8adf5b;
+                                }
+                                .brand_name {
+                                    font-size: 16px;
+                                    margin-bottom: 0;
+                                }
+                                .brand_info {
+                                    font-size: 12px;
+                                    color: #999999;
+                                    margin-bottom: 0;
+                                }
+                                .glyphicon {
+                                    position: absolute;
+                                    right: 12px;
+                                    top: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product_sales {
+            .product_sales_title {
+                box-shadow: 0 -2px 2px #ccc,0 1px 1px #ccc;
+                .panel {
+                    background-color: #f3f3f3;
+                    color: #8f5316;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    .panel-body {
+                        padding: 10px;
+                    }
+                }
+            }
+            .product_sales_content {
+                ul {
+                    margin-bottom: 0;
+                    li {
+                        background-color: #f2f2f2;
+                        .media {
+                            .media-left {
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            .media-body {
+                                .media-heading {
+                                    font-size: 16px;
+                                    height: 35px;
+                                    overflow: hidden;
+                                    margin-bottom: 5px;
+                                }
+                                .sales_price {
+                                    margin-top: 10px;
+                                    span {
+                                        font-size: 16px;
+                                        color: #ff9000;
+                                    }   
+                                    .price {
+                                        color:#ea3934;
+                                    }
+                                }
+                                .sales_info {
+                                    margin-top: 10px;
+                                    font-size: 12px;
+                                    color: #99a4bd;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //评论
+        .product_comment {
+            .product_comment_title {
+                box-shadow: 0 -2px 2px #ccc,0 1px 1px #ccc;
+                .panel {
+                    background-color: #f3f3f3;
+                    color: #8f5316;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    .panel-body {
+                        padding: 10px;
+                    }
+                }
+            }
+            .product_comment_content {
+                ul {
+                    margin-bottom: 0;
+                    li {
+                        background-color: #f2f2f2;
+                        .media {
+                            .media-left {
+                                img {
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            .media-body {
+                                h4 {
+                                    color: #999999;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .comment {
+                            margin-top: 10px;
+                            background-color: #f8f8f8;  
+                            position: relative;
+                            padding: 10px;
+                            .person_info {
+                                i {
+                                    color:#ff9000;
+                                    font-size: 16px;
+                                }
+                                span {
+                                    color: #99a4bf;
+                                }
+                            }
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                left: 25px;
+                                top: -6px;
+                                border-left: 6px solid transparent;
+                                border-right: 6px solid transparent;
+                                border-bottom:6px solid #f8f8f8;
+                            }
+                            .comment_info {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // 页脚
+    .footer {
+        padding-top: 10px;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #5a5a5a;
+        ul {
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+            li {
+                padding: 10px 10px;
+                width: 30%;
+                float: left;
+                border-right: 1px solid #c4c4c4;
+                a {
+                    color: #5a5a5a;
+                }
+            }
+            .back_to_top {
+                width: 40%;
+                height: 40px;
+                img {
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    width: 15px;
+                }
+            }
+        }
+        .footer_download {
+            text-align: center;
+            margin-bottom: 0;
+            a {
+                color: #5a5a5a;
+                display: inline-block;
+            }
+            .footer_appdownload {
+                color: red;
+            }
+        }
+    }
+}

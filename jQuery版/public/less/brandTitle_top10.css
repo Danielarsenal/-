@@ -1,0 +1,324 @@
+/* 初始化1：去掉默认的边距 */
+body,
+div,
+span,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+input,
+img,
+a,
+select,
+textarea,
+button,
+header,
+aside,
+article,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 初始化2：清除列表前的默认的点或序号 */
+ul,
+ol {
+  list-style: none;
+}
+/* 初始化3：清除默认的边框 */
+input {
+  border: none;
+  outline: none;
+}
+/* 初始化4：给页面设立一个统一的字体大小、类型、行高，以及body的背景色 */
+body {
+  background-color: #fff;
+}
+/* 初始化5： 设置a标签的字体颜色以及去掉下划线 */
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+/* 初始化6:清除浮动的样式代码 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.clearfloat {
+  zoom: 1;
+  /*兼容ie低版本浏览器  */
+}
+/* 初始化7：设置浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.layout .header {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: #ff841d;
+}
+.layout .header .index_logo a img {
+  width: 187px;
+}
+.layout .header .app_download a {
+  width: 60px;
+  height: 60px;
+  margin-top: -5px;
+}
+.layout .header .app_download a img {
+  width: 34px;
+}
+.layout .main .nav_search {
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.layout .main .nav_search > div {
+  width: 100%;
+}
+.layout .main .nav_search > div .search {
+  background-color: #f1f1f1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 95%;
+}
+.layout .main .nav_search > div span {
+  width: 63px;
+  height: 34px;
+  color: white;
+  padding-top: 8px;
+  font-size: 17px;
+  border-radius: 20px;
+  background-color: #ff841d;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+}
+.layout .main .nav_bread {
+  font-size: 16px;
+  margin-bottom: 0px;
+  box-shadow: 0 -2px 2px #ededed, 0 2px 2px #f2f2f2;
+  background: linear-gradient(to bottom, #fff, #ebebeb);
+}
+.layout .main .nav_bread li a {
+  display: inline-block;
+  color: #5a5a5a;
+}
+.layout .main .nav_bread .nav_brand::before {
+  color: #5a5a5a;
+  content: '>';
+}
+.layout .main .brand_rank .brand_rank_title {
+  box-shadow: 0 -2px 2px #ccc, 0 1px 1px #ccc;
+}
+.layout .main .brand_rank .brand_rank_title .panel {
+  background-color: #f3f3f3;
+  color: #8f5316;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.layout .main .brand_rank .brand_rank_title .panel .panel-body {
+  padding: 10px;
+}
+.layout .main .brand_rank .brand_rank_content .panel {
+  margin-bottom: 0;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body {
+  padding: 0;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul {
+  margin-bottom: 0;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li {
+  position: relative;
+  padding-left: 30px;
+  background-color: #f2f2f2;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .icoNum {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  background-color: #c9c9c9;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .icoNum1 {
+  background-color: red;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .icoNum2 {
+  background-color: #ff9314;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .icoNum3 {
+  background-color: #8adf5b;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .brand_name {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .brand_info {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 0;
+}
+.layout .main .brand_rank .brand_rank_content .panel .panel-body ul li .glyphicon {
+  position: absolute;
+  right: 12px;
+  top: 22px;
+}
+.layout .main .product_sales .product_sales_title {
+  box-shadow: 0 -2px 2px #ccc, 0 1px 1px #ccc;
+}
+.layout .main .product_sales .product_sales_title .panel {
+  background-color: #f3f3f3;
+  color: #8f5316;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.layout .main .product_sales .product_sales_title .panel .panel-body {
+  padding: 10px;
+}
+.layout .main .product_sales .product_sales_content ul {
+  margin-bottom: 0;
+}
+.layout .main .product_sales .product_sales_content ul li {
+  background-color: #f2f2f2;
+}
+.layout .main .product_sales .product_sales_content ul li .media .media-left img {
+  width: 100px;
+  height: 100px;
+}
+.layout .main .product_sales .product_sales_content ul li .media .media-body .media-heading {
+  font-size: 16px;
+  height: 35px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.layout .main .product_sales .product_sales_content ul li .media .media-body .sales_price {
+  margin-top: 10px;
+}
+.layout .main .product_sales .product_sales_content ul li .media .media-body .sales_price span {
+  font-size: 16px;
+  color: #ff9000;
+}
+.layout .main .product_sales .product_sales_content ul li .media .media-body .sales_price .price {
+  color: #ea3934;
+}
+.layout .main .product_sales .product_sales_content ul li .media .media-body .sales_info {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #99a4bd;
+}
+.layout .main .product_comment .product_comment_title {
+  box-shadow: 0 -2px 2px #ccc, 0 1px 1px #ccc;
+}
+.layout .main .product_comment .product_comment_title .panel {
+  background-color: #f3f3f3;
+  color: #8f5316;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.layout .main .product_comment .product_comment_title .panel .panel-body {
+  padding: 10px;
+}
+.layout .main .product_comment .product_comment_content ul {
+  margin-bottom: 0;
+}
+.layout .main .product_comment .product_comment_content ul li {
+  background-color: #f2f2f2;
+}
+.layout .main .product_comment .product_comment_content ul li .media .media-left img {
+  width: 100px;
+  height: 100px;
+}
+.layout .main .product_comment .product_comment_content ul li .media .media-body h4 {
+  color: #999999;
+  font-size: 16px;
+}
+.layout .main .product_comment .product_comment_content ul li .comment {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 10px;
+}
+.layout .main .product_comment .product_comment_content ul li .comment .person_info i {
+  color: #ff9000;
+  font-size: 16px;
+}
+.layout .main .product_comment .product_comment_content ul li .comment .person_info span {
+  color: #99a4bf;
+}
+.layout .main .product_comment .product_comment_content ul li .comment::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #f8f8f8;
+}
+.layout .main .product_comment .product_comment_content ul li .comment .comment_info {
+  font-size: 16px;
+}
+.layout .footer {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #5a5a5a;
+}
+.layout .footer ul {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.layout .footer ul li {
+  padding: 10px 10px;
+  width: 30%;
+  float: left;
+  border-right: 1px solid #c4c4c4;
+}
+.layout .footer ul li a {
+  color: #5a5a5a;
+}
+.layout .footer ul .back_to_top {
+  width: 40%;
+  height: 40px;
+}
+.layout .footer ul .back_to_top img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 15px;
+}
+.layout .footer .footer_download {
+  text-align: center;
+  margin-bottom: 0;
+}
+.layout .footer .footer_download a {
+  color: #5a5a5a;
+  display: inline-block;
+}
+.layout .footer .footer_download .footer_appdownload {
+  color: red;
+}

@@ -1,0 +1,146 @@
+/* 初始化1：去掉默认的边距 */
+body,
+div,
+span,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+input,
+img,
+a,
+select,
+textarea,
+button,
+header,
+aside,
+article,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 初始化2：清除列表前的默认的点或序号 */
+ul,
+ol {
+  list-style: none;
+}
+/* 初始化3：清除默认的边框 */
+input {
+  border: none;
+  outline: none;
+}
+/* 初始化4：给页面设立一个统一的字体大小、类型、行高，以及body的背景色 */
+body {
+  background-color: #fff;
+}
+/* 初始化5： 设置a标签的字体颜色以及去掉下划线 */
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+/* 初始化6:清除浮动的样式代码 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.clearfloat {
+  zoom: 1;
+  /*兼容ie低版本浏览器  */
+}
+/* 初始化7：设置浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.layout {
+  background-color: #f2f2f2;
+}
+.layout .header {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: #ff841d;
+}
+.layout .header .index_logo a img {
+  width: 187px;
+}
+.layout .header .app_download a {
+  width: 60px;
+  height: 60px;
+  margin-top: -5px;
+}
+.layout .header .app_download a img {
+  width: 34px;
+}
+.layout .main {
+  padding: 10px;
+  margin-top: 20px;
+  height: 400px;
+}
+.layout .main .user,
+.layout .main .password {
+  height: 50px;
+  font-size: 16px;
+}
+.layout .main .loginBtn {
+  height: 50px;
+  background: linear-gradient(to bottom, #ffaf47, #ff9000);
+  color: #fff;
+}
+.layout .footer {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #5a5a5a;
+}
+.layout .footer ul {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.layout .footer ul li {
+  padding: 10px 10px;
+  width: 30%;
+  float: left;
+  border-right: 1px solid #c4c4c4;
+}
+.layout .footer ul li a {
+  color: #5a5a5a;
+}
+.layout .footer ul .back_to_top {
+  width: 40%;
+  height: 40px;
+}
+.layout .footer ul .back_to_top img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 15px;
+}
+.layout .footer .footer_download {
+  text-align: center;
+  margin-bottom: 0;
+}
+.layout .footer .footer_download a {
+  color: #5a5a5a;
+  display: inline-block;
+}
+.layout .footer .footer_download .footer_appdownload {
+  color: red;
+}

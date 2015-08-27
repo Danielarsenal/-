@@ -1,0 +1,170 @@
+@import 'xupeiwen.less';
+a {
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    .header {
+        width: 100%;
+        padding: 0;
+        background-color: #ff841d;
+        .index_logo {
+            a {
+                img {
+                    width: 187px;
+                }
+            }
+        }
+        .app_download {
+            a {
+                width: 60px;
+                height: 60px;
+                margin-top: -5px;
+                img {
+                    width: 34px;
+                }
+            }
+        }
+    }
+} //搜索框
+.nav_search {
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    >div {
+        width: 100%;
+        .search {
+            background-color: #f1f1f1;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 90%;
+        }
+        span {
+            width: 63px;
+            height: 34px;
+            color: white;
+            padding-top: 8px;
+            font-size: 17px;
+            border-radius: 20px;
+            background-color: #ff841d;
+            position: absolute;
+            z-index: 999;
+            right: 0;
+        }
+    }
+}
+
+.main {
+    width: 100%; // height: 1000px;
+    margin-top: 6px;
+    margin-bottom: 40px;
+    background-color: #f2f2f2;
+    form {
+        .brief {
+            padding-left: 5px;
+            padding-right: 5px;
+            .btn-group {
+                width: 100%;
+                .btn {
+                    background-color: #ebebeb;
+                    height: 42px;
+                    width: 100%;
+                    border-radius: 0px;
+                    text-align: left;
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: bold;
+                    box-shadow: 0px 0px 0px #fff;
+                    border-bottom: 0;
+                    span {
+                        position: absolute;
+                        top: 12px;
+                        right: 10px;
+                    }
+                }
+                .dropdown-menu {
+                    margin-top: -1px;
+                    position: relative;
+                    width: 100%;
+                    padding: 0;
+                    li {
+                        z-index: 999;
+                        width: 33.33333333%;
+                        float: left;
+                        border-bottom: 1px solid #ccc;
+                        height: 42px;
+                        line-height: 42px;
+                        margin-right: 0;
+                        margin-left: 0;
+                        text-align: center;
+                        border-right: 1px solid #ccc;
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            .btn-group:nth-child(1) {
+                .btn {
+                    border-radius: 4px 4px 0px 0px;
+                }
+            }
+            .btn-group:nth-child(8) {
+                .btn {
+                    margin-bottom: -4px;
+                    border-radius: 0px 0px 4px 4px;
+                }
+            }
+            .open {
+                border-bottom: 0;
+            }
+            .btn-default:hover {
+                border-color: #ccc;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: #5a5a5a;
+    ul {
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        li {
+            padding: 10px 10px;
+            width: 30%;
+            float: left;
+            border-right: 1px solid #c4c4c4;
+            a {
+                color: #5a5a5a;
+            }
+        }
+        .back_to_top {
+            width: 40%;
+            height: 40px;
+            img {
+                margin-bottom: 5px;
+                margin-right: 5px;
+                width: 15px;
+            }
+        }
+    }
+    .footer_download {
+        text-align: center;
+        margin-bottom: 0;
+        a {
+            color: #5a5a5a;
+            display: inline-block;
+        }
+        .footer_appdownload {
+            color: red;
+        }
+    }
+}

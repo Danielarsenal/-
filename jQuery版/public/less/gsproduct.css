@@ -1,0 +1,551 @@
+/**
+ * Created by xuexin.yang on 2017/7/18.
+ */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+[hidefocus],
+summary {
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+sup,
+sub {
+  font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial;
+  color: #333;
+  outline: 0;
+}
+body {
+  background: #fff;
+}
+a,
+a:hover {
+  color: #333;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+@media screen and (device-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (device-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (device-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (device-width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+/*头部样式*/
+.header-bar {
+  height: 2.75rem;
+  font-size: 1rem;
+  color: #fff;
+  overflow: hidden;
+  background-color: #ff8b00;
+  box-shadow: 0.06rem 0.13rem 0.19rem #ddd;
+  position: relative;
+}
+.header-bar .left {
+  position: absolute;
+  left: 0.5rem;
+  line-height: 2.75rem;
+}
+.header-bar .left a {
+  color: #fff;
+}
+.header-bar .center {
+  text-align: center;
+  line-height: 2.75rem;
+}
+.header-bar .right {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+.header-bar .right a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.header-bar .right span {
+  font-size: 0.1rem;
+}
+/*商店/地区/价格筛选导航部分*/
+.coudan-box .list .hd {
+  position: relative;
+  /*各部分对应下拉列表样式*/
+  /*商店对应下拉样式*/
+  /*地区对应下拉样式*/
+  /*价格对应下拉样式*/
+  /*搜索下拉列表样式*/
+}
+.coudan-box .list .hd .filter {
+  width: 100%;
+  height: 2.38rem;
+  line-height: 2.38rem;
+  border-bottom: 0.06rem solid #dadada;
+  overflow: hidden;
+}
+.coudan-box .list .hd .filter ul {
+  margin-right: 2.88rem;
+}
+.coudan-box .list .hd .filter ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.coudan-box .list .hd .filter ul li a {
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 0.8rem;
+}
+.coudan-box .list .hd .search {
+  line-height: 2.38rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2.88rem;
+  text-align: center;
+  border-left: 0.06rem solid #dadada;
+}
+.coudan-box .list .hd .search i {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.coudan-box .list .hd .dd-shop {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0.19rem 0.38rem #dddddd;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  display: none;
+}
+.coudan-box .list .hd .dd-shop ul li {
+  border-bottom: 0.06rem solid #dadada;
+  position: relative;
+}
+.coudan-box .list .hd .dd-shop ul li a {
+  display: block;
+  line-height: 2.5rem;
+  padding: 0 0.63rem;
+}
+.coudan-box .list .hd .dd-shop ul li i {
+  display: block;
+  position: absolute;
+  right: 0.94rem;
+  top: 50%;
+  margin-top: -0.62rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.coudan-box .list .hd .dd-shop ul li.active i {
+  color: #ff4400;
+}
+.coudan-box .list .hd .drop-down.on {
+  z-index: 10;
+}
+.coudan-box .list .hd .dd-area {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0.19rem 0.38rem #dddddd;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  display: none;
+}
+.coudan-box .list .hd .dd-area ul {
+  box-shadow: 0 0.19rem 0.38rem #dddddd;
+}
+.coudan-box .list .hd .dd-area ul li {
+  border-bottom: 0.06rem solid #dadada;
+  position: relative;
+}
+.coudan-box .list .hd .dd-area ul li a {
+  font-size: 1rem;
+  display: block;
+  line-height: 2.5rem;
+  padding: 0 0.63rem;
+}
+.coudan-box .list .hd .dd-area ul li i {
+  position: absolute;
+  right: 0.94rem;
+  top: 50%;
+  margin-top: -0.62rem;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.coudan-box .list .hd .dd-area ul li.active i {
+  color: #ff4400;
+}
+.coudan-box .list .hd .dd-price {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0.19rem 0.38rem #dddddd;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  display: none;
+}
+.coudan-box .list .hd .dd-price ul {
+  box-shadow: 0 0.19rem 0.38rem #dddddd;
+}
+.coudan-box .list .hd .dd-price ul li {
+  border-bottom: 0.06rem solid #dadada;
+  position: relative;
+}
+.coudan-box .list .hd .dd-price ul li a {
+  font-size: 1rem;
+  display: block;
+  line-height: 2.5rem;
+  padding: 0 0.63rem;
+}
+.coudan-box .list .hd .dd-price ul li.active i {
+  position: absolute;
+  right: 0.94rem;
+  top: 50%;
+  margin-top: -0.62rem;
+  color: #ff4400;
+  font-size: 1.25rem;
+}
+.coudan-box .list .hd .dd-search {
+  padding: 0.63rem 0;
+  background: #f7f7f7;
+  width: 100%;
+  box-shadow: 0 0.19rem 0.38rem #dddddd;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  display: none;
+}
+.coudan-box .list .hd .dd-search .formsearch {
+  width: 100%;
+  padding-bottom: 0.63rem;
+  position: relative;
+  display: flex;
+}
+.coudan-box .list .hd .dd-search .formsearch .left {
+  flex: 1;
+  margin-left: 0.63rem;
+  position: relative;
+}
+.coudan-box .list .hd .dd-search .formsearch .left input[type='search'] {
+  width: 100%;
+  height: 2.18rem;
+  font-size: 0.88rem;
+  padding: 0 1.63rem;
+  outline: none;
+  border: none;
+  border: 0.06rem solid #eee;
+}
+.coudan-box .list .hd .dd-search .formsearch .left i {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../images/icon_bar.png');
+  background-size: 14.58rem;
+  background-repeat: no-repeat;
+  background-position: -3.12rem -0.18rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.coudan-box .list .hd .dd-search .formsearch .right {
+  float: right;
+  width: 2.5rem;
+  text-align: left;
+}
+.coudan-box .list .hd .dd-search .formsearch .right input[type="button"] {
+  width: 1.88rem;
+  text-align: center;
+  line-height: 2.18rem;
+  font-size: 0.94rem;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+.coudan-box .list .hd .dd-search .sort .txt {
+  font-size: 0.88rem;
+  padding: 0.63rem 0.63rem 0 0.63rem;
+}
+.coudan-box .list .hd .dd-search .sort .type dl {
+  padding: 0 0.63rem 0.63rem 0;
+  width: 100%;
+}
+.coudan-box .list .hd .dd-search .sort .type dl dd {
+  width: 25%;
+  float: left;
+  padding: 0.63rem 0 0 0.63rem;
+  box-sizing: border-box;
+}
+.coudan-box .list .hd .dd-search .sort .type dl dd a {
+  display: block;
+  border-radius: 0.18rem;
+  border: 0.06rem solid #eaeaea;
+  color: #5a5a5a;
+  text-align: center;
+  line-height: 1.88rem;
+  font-size: 0.75rem;
+}
+.coudan-box .list .hd .dd-search .sort .type dl dd.active a {
+  background-color: #ff9501;
+  color: #ffffff;
+  border: 0.06rem solid #ff9501;
+}
+.coudan-box .list .hd .dd-search .category .text {
+  font-size: 0.88rem;
+  padding: 0.63rem 0.63rem 0 0.63rem;
+}
+.coudan-box .list .hd .dd-search .category dl {
+  width: 100%;
+  padding: 0 0.63rem 0.63rem 0;
+  box-sizing: border-box;
+}
+.coudan-box .list .hd .dd-search .category dl dd {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0.63rem 0 0 0.63rem;
+}
+.coudan-box .list .hd .dd-search .category dl dd a {
+  display: block;
+  border-radius: 0.18rem;
+  border: 0.06rem solid #eaeaea;
+  color: #5a5a5a;
+  text-align: center;
+  line-height: 1.88rem;
+  font-size: 0.75rem;
+}
+.coudan-box .list .hd .dd-search .category dl dd.active a {
+  background-color: #ff9501;
+  color: #ffffff;
+  border: 0.06rem solid #ff9501;
+}
+/*bd部分样式*/
+.coudan-box .list .bd {
+  background-color: #f1f1f1;
+  padding: 0.38rem 0;
+}
+.coudan-box .list .bd .contanier {
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+}
+.coudan-box .list .bd .contanier li {
+  float: left;
+  width: 50%;
+}
+.coudan-box .list .bd .contanier li a {
+  display: block;
+  margin: 0.25rem;
+  background-color: #ffffff;
+}
+.coudan-box .list .bd .contanier li a .pic {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.coudan-box .list .bd .contanier li a .pic img {
+  width: 100%;
+  height: auto;
+}
+.coudan-box .list .bd .contanier li a .title {
+  color: #333333;
+  padding: 0 0.38rem;
+  height: 0.88rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  margin-top: 0.63rem;
+  line-height: 0.88rem;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0.38rem;
+}
+.coudan-box .list .bd .contanier li a .other {
+  padding: 0.38rem;
+}
+.coudan-box .list .bd .contanier li a .other .price {
+  float: left;
+  color: #f8601d;
+  font-size: 1.25rem;
+}
+.coudan-box .list .bd .contanier li a .other .price em {
+  font-style: normal;
+  font-size: 0.63rem;
+  color: #f8601d;
+}
+.coudan-box .list .bd .contanier li a .other .btn {
+  float: right;
+  font-size: 0.88rem;
+  color: #FFFFFF;
+  border-radius: 0.18rem;
+  background-color: #ff9501;
+  padding: 0.25rem 0.63rem;
+  text-decoration: none;
+  display: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../assets/xuexin/font/iconfont.eot');
+  src: url('../assets/xuexin/font/iconfont.eot?#iefix') format('embedded-opentype'), url('../assets/xuexin/font/iconfont.woff') format('woff'), url('../assets/xuexin/font/iconfont.ttf') format('truetype'), url('../assets/xuexin/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.01rem;
+  -moz-osx-font-smoothing: grayscale;
+}

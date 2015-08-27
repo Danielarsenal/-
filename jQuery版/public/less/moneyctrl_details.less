@@ -1,0 +1,257 @@
+@import "base.less";
+header {
+    .navbar-default {
+        margin: 0;
+        background-color: #ff841d;
+        .pull-left {
+            i {
+                font-size: 20px;
+                color: white;
+                font-weight: 700;
+            }
+        }
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        .app-donwload img {
+            width: 34px;
+            margin-top: 8px;
+        }
+    }
+}
+
+//  主体 
+main {
+    background-color: #fff; // 商品详情
+    .container {
+        // 标题
+        .ct-content {
+            h2 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #5a5a5a;
+            }
+            p {
+                color: red;
+                font-weight: 700;
+            }
+            .other {
+                font-size: 10px;
+                color: #9b9b9b;
+                margin: 10px 0;
+            }
+        } // 内容
+        .content-text {
+            div {
+                p {
+                    font-size: 16px;
+                    span {
+                        width: 110px;
+                        height: 110px;
+                        float: right;
+                        img {
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    
+    // 评价区
+    .comment {
+        padding: 0 8px;
+        .city{
+            #disstorck{
+                list-style: none;
+                // text-align: center;
+                margin: 0 auto;
+                width: 120px;
+                border: #eee 1px solid;
+                box-shadow: 1px 1px 2px #ccc;
+                padding: 0 0 ;
+                li{
+                    // text-align: center;
+                    position: relative;
+                    margin: 0 10px;
+                    border-bottom: #ccc 1px dotted;
+                    width:100px;
+                    a{
+                        
+                        span{
+                            font-size: 10px;
+                            font-family: "微软雅黑" 
+                            padding: 5px;
+                            
+                            strong{
+                                color:#ff841d;
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cm-buy {
+            padding: 20px 10px;
+            a {
+                width: 100%;
+                height: 40px;
+                background-color: #ff9000;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+                line-height: 40px;
+                font-size: 16px;
+            }
+        } 
+        // 发表评论
+        .cm-new {
+            .form {
+                position: relative;
+                textarea {
+                    border: #eee solid 2px;
+                    width: 100%;
+                    height: 150px;
+                    outline: none;
+                }
+                .ctrl {
+                    height: 40px;
+                    width: 100%;
+                    background-color: #fbfbfb;
+                    position: absolute;
+                    bottom: 4px; // right:0;
+                    input {
+                        width: 100px;
+                        height: 40px;
+                        background-color: #ff841d;
+                        border: none;
+                        color: white;
+                        padding: 2px 2px;
+                        float: right;
+                    }
+                }
+            } // 最新评论
+            .list {
+                ul {
+                    list-style: none;
+                    padding-left: 10px;
+                    .ui-border-b {
+                        // height: 60px;
+                        margin: 10px 0;
+                        .userimg {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 20px;
+                            float: left;
+                        }
+                        .con {
+                            padding-left: 60px;
+                            width: 100%;
+                            .name {
+                                height: 20px;
+                                .username{
+                                    color: #77a9cb;
+                                    font-size: 10px;
+                                    float: left;
+                                }
+                                .time{
+                                    color: #5a5a5a;
+                                    font-size: 10px;
+                                    float: right;
+                                }
+                            }
+                            .content{
+                                img{
+                                    width: 22px;
+                                    height: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    color: #5a5a5a;
+    background-color: #efefef;
+        margin-bottom: 50px;
+    ul {
+        list-style: none;
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        li {
+            padding: 10px 10px;
+            width: 30%;
+            float: left;
+            border-right: 1px solid #c4c4c4;
+            img {
+                display: inline-block;
+            }
+            a {
+                color: #5a5a5a;
+            }
+        }
+        .back_to_top {
+            width: 40%;
+            height: 40px;
+            img {
+                margin-bottom: 5px;
+                margin-right: 5px;
+                width: 15px;
+            }
+        }
+    }
+    .footer_download {
+        text-align: center;
+        margin-bottom: 0;
+        a {
+            color: #5a5a5a;
+            display: inline-block;
+        }
+        .footer_appdownload {
+            color: red;
+        }
+    }
+}
+
+.fixation {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+    .wt-comment {
+        position: absolute;
+        background-color: white;
+        width: 100px;
+        height: 100%;
+        text-align: center;
+        padding-top: 5px;
+        a {
+            color: #727272;
+        }
+    }
+    .go-buy {
+        width: 100%;
+        height: 100%;
+        background-color: #ff841d;
+        padding-left: 100px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 50px;
+        a {
+            color: white;
+        }
+    }
+    
+}

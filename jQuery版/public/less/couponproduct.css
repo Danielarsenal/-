@@ -1,0 +1,223 @@
+/* 初始化1：去掉默认的边距 */
+body,
+div,
+span,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+input,
+img,
+a,
+select,
+textarea,
+button,
+header,
+aside,
+article,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 初始化2：清除列表前的默认的点或序号 */
+ul,
+ol {
+  list-style: none;
+}
+/* 初始化3：清除默认的边框 */
+input {
+  border: none;
+  outline: none;
+}
+/* 初始化4：给页面设立一个统一的字体大小、类型、行高，以及body的背景色 */
+body {
+  background-color: #fff;
+}
+/* 初始化5： 设置a标签的字体颜色以及去掉下划线 */
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+/* 初始化6:清除浮动的样式代码 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.clearfloat {
+  zoom: 1;
+  /*兼容ie低版本浏览器  */
+}
+/* 初始化7：设置浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+a:hover {
+  text-decoration: none;
+}
+.coupon_top {
+  background: #f4483e;
+  text-align: center;
+  width: 100%;
+  height: 44px;
+  color: #fff;
+  position: relative;
+  top: 0;
+}
+.coupon_top a {
+  width: 50px;
+  height: 44px;
+  font-size: 25px;
+  color: #fff;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.coupon_top h2 {
+  line-height: 44px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.coupon_top a:first-child {
+  left: 0;
+}
+.coupon_top img {
+  width: 60%;
+}
+.couponbox ul li {
+  border-bottom: 1px solid #ddd;
+}
+.couponbox ul li a {
+  width: 100%;
+  height: 138px;
+  padding: 10px;
+}
+.couponbox ul li a .pic {
+  float: left;
+}
+.couponbox ul li a .pic img {
+  width: 100px;
+  height: 80px;
+}
+.couponbox ul li a .info {
+  padding-left: 110px;
+}
+.couponbox ul li a .info .info_title {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  line-height: 20px;
+}
+.couponbox ul li a .info h2 {
+  font-size: 16px;
+  font-style: normal;
+}
+.couponbox ul li a .info p {
+  font-size: 12px;
+  color: orange;
+  margin-top: 20px;
+}
+.coupon_mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.coupon_mask .mask_content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.coupon_mask .maskbox {
+  width: 200px;
+  height: 150px;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.coupon_mask .maskbox img {
+  width: 200px;
+  height: 150px;
+  display: block;
+}
+.coupon_mask .maskbox .pre,
+.coupon_mask .maskbox .next {
+  width: 30px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: black;
+  color: #ccc;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+}
+.coupon_mask .maskbox .pre {
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+.footer {
+  text-align: center;
+  background-color: #efefef;
+  color: #5a5a5a;
+}
+.footer ul {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.footer ul li {
+  padding: 10px 10px;
+  width: 30%;
+  float: left;
+  border-right: 1px solid #c4c4c4;
+}
+.footer ul li a {
+  color: #5a5a5a;
+}
+.footer ul .back_to_top {
+  width: 40%;
+  height: 40px;
+}
+.footer ul .back_to_top img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 15px;
+}
+.footer .footer_download {
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer .footer_download a {
+  color: #5a5a5a;
+  display: inline-block;
+}
+.footer .footer_download .footer_appdownload {
+  color: red;
+}

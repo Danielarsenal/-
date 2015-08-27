@@ -1,0 +1,86 @@
+@import './xupeiwen.less';
+.layout {
+    background-color: #f2f2f2;
+    // 头部
+    .header {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        background-color: #ff841d;
+        .index_logo {
+            a {
+                img {
+                    width: 187px;
+                }
+            }
+        }
+        .app_download {
+            a {
+                width: 60px;
+                height: 60px;
+                margin-top: -5px;
+                img {
+                    width: 34px;
+                }
+            }
+        }
+    } 
+
+    // 主体
+    .main {   
+        padding: 10px;
+        margin-top: 20px;
+        height: 400px;
+        .user,
+        .password {
+            height: 50px;
+            font-size: 16px;
+        }
+        .loginBtn {
+            height: 50px;
+            background:linear-gradient(to bottom,#ffaf47,#ff9000);
+            color: #fff;
+        }
+    }
+
+    // 页脚
+    .footer {
+        padding-top: 10px;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #5a5a5a;
+        ul {
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+            li {
+                padding: 10px 10px;
+                width: 30%;
+                float: left;
+                border-right: 1px solid #c4c4c4;
+                a {
+                    color: #5a5a5a;
+                }
+            }
+            .back_to_top {
+                width: 40%;
+                height: 40px;
+                img {
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    width: 15px;
+                }
+            }
+        }
+        .footer_download {
+            text-align: center;
+            margin-bottom: 0;
+            a {
+                color: #5a5a5a;
+                display: inline-block;
+            }
+            .footer_appdownload {
+                color: red;
+            }
+        }
+    }
+}

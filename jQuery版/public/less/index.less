@@ -1,0 +1,188 @@
+@import './xupeiwen.less';
+.layout {
+    // 头部
+    .header {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        background-color: #ff841d;
+        .index_logo {
+            a {
+                img {
+                    width: 187px;
+                }
+            }
+        }
+        .app_download {
+            a {
+                width: 60px;
+                height: 60px;
+                margin-top: -5px;
+                img {
+                    width: 34px;
+                }
+            }
+        }
+    } 
+
+    // 主体
+    .main {
+        //搜索框
+        .nav_search {
+            border-bottom: 1px solid #e6e6e6;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            >div {
+                width: 100%;
+                .search {
+                    background-color: #f1f1f1;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    width: 90%;
+                }
+                span {
+                    width: 63px;
+                    height: 34px;
+                    color: white;
+                    padding-top: 8px;
+                    font-size: 17px;
+                    border-radius: 20px;
+                    background-color: #ff841d;
+                    position: absolute;
+                    z-index: 999;
+                    right: 0;
+                }
+            }
+        }
+        // 导航栏
+        .navs {
+            margin-top: 10px;
+            text-align: center;
+            .row {
+                .navlist {
+                    padding-top: 10px;
+                    img {
+                        width: 80%;
+                    }
+                    p {
+                        color: #5a5a5a;
+                    }
+                }
+                .menu_well {
+                    background-color:#fff;
+                    border:none;
+                    box-shadow: none;
+                    padding: 0;
+                }
+            }
+        }
+        // 超值折扣推荐
+        .discount_introduce {
+            margin-top: 10px;  
+            padding-bottom: 10px;
+            .discount_introduce_title {
+                padding: 8px;
+                background:linear-gradient(to bottom,#ffaf47,#ff9000);
+                p {
+                    margin: 0;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: bold;
+                }
+            }
+            //超值折扣推荐
+            .discount_introduce_content {
+                padding:10px;
+                width: 100%;
+                .media {
+                    margin-bottom: 20px;
+                    .media-left {
+                        img {
+                            width: 100px;
+                            height: 100px; 
+                        }
+                    }
+                    .media-body {
+                        a {
+                            color: #333333;
+                            h4 {
+                                height: 70px;
+                                font-size: 16px;
+                                span {
+                                    color: #ff6c00;
+                                }
+                            }
+                            >span {
+                                color: #a1a1a1;
+                                font-size: 12px;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+        //更多优惠信息
+        .moreInfo {
+            padding:10px 10px 20px 10px;
+            background-color: #f2f2f2;
+            >button {
+                padding: 5px;;
+                font-size: 14px;
+            }
+        }
+        // 品牌排行
+        .brand_rank {
+            padding: 8px;
+            background:linear-gradient(to bottom,#ffaf47,#ff9000);
+            p {
+                margin: 0;
+                color: #fff;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: bold;
+            }
+        }
+    } 
+
+    // 页脚
+    .footer {
+        padding-top: 10px;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #5a5a5a;
+        ul {
+            border-top: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4;
+            li {
+                padding: 10px 10px;
+                width: 30%;
+                float: left;
+                border-right: 1px solid #c4c4c4;
+                a {
+                    color: #5a5a5a;
+                }
+            }
+            .back_to_top {
+                width: 40%;
+                height: 40px;
+                img {
+                    margin-bottom: 5px;
+                    margin-right: 5px;
+                    width: 15px;
+                }
+            }
+        }
+        .footer_download {
+            text-align: center;
+            margin-bottom: 0;
+            a {
+                color: #5a5a5a;
+                display: inline-block;
+            }
+            .footer_appdownload {
+                color: red;
+            }
+        }
+    }
+}
