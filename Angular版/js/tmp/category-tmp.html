@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!-- 分类区域 -->
+    <section id="category">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default" ng-repeat="value in categorytitles">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne{{$index}}" aria-expanded="false" aria-controls="collapseOne" class="collapsed" ng-click="getCategory(value.titleId)">
+                          {{value.title}}                        
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-4" ng-repeat="value in categorys"><a href="#/productlist/{{value.categoryId}}/1">{{value.category}}</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

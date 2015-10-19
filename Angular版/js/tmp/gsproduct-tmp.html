@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <main class="gs-product">
+        <div class="list">
+            <div class="hd">
+                <div class="filter">
+                    <ul>
+                        <li class="on"><a href="javascript:;" ng-click="shopShow(0)">京东<i></i></a></li>
+                        <li class=""><a href="javascript:;" ng-click="shopShow(1)">华北<i></i></a></li>
+                        <li class=""><a href="javascript:;">1元<i></i></a></li>
+                    </ul>
+                </div>
+                <div class="search"> <i class="icon-search"></i></div>
+                <!--各种下拉-->
+                <div ng-class="{popsort:true, popbox:true, on:boxShow == 0}" id="shop">
+                    <ul>
+                        <li ng-repeat="value in gsshops"><a href="#/gsproduct/{{value.shopId}}/{{areaid}}/{{value.shopName}}/{{areaname}}">{{value.shopName}}</a></li>
+                    </ul>
+                </div>
+                <div ng-class="{popsort:true, popbox:true, on:boxShow == 1}" id="area">
+                    <ul>
+                        <li ng-repeat="value in gsareas"><a href="#/gsproduct/{{shopid}}/{{value.areaId}}/{{shopname}}/{{value.areaName.split('（')[0]}}">{{value.areaName}}</a></li>
+                    </ul>
+                </div>
+                <div class="popprice popbox" id="price">
+                    <ul>
+                        <li class="on"><a href="javascript:GetRequest('areaMoney', 0);">全部价格</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bd gs-product-list">
+                <ul class="masonry" id="container">
+                    <li ng-repeat="value in gsproducts">
+                        <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+                            <div class="pic"><img src="{{value.productImg}}" style="width: 174px; height: 174px;"></div>
+                            <div class="title">{{value.productName}}</div>
+                            <div class="other">
+                                <div class="price">{{value.productPrice}}</div>
+                                <div class="btn">去凑单</div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
